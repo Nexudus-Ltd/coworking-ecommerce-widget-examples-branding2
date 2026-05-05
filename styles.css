@@ -678,7 +678,7 @@ ul { list-style: none; }
 
 /* Meeting rooms teaser strip */
 .meeting-rooms-teaser {
-  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  background-color: var(--color-primary);
   border-radius: var(--radius-lg);
   padding: 40px;
   display: flex;
@@ -831,9 +831,9 @@ ul { list-style: none; }
   background-color: var(--color-secondary);
   border-radius: 32px 32px 0 0;
 }
-.contact-section .section-title { color: var(--color-white); }
-.contact-section .section-subtitle { color: rgba(255,255,255,0.7); }
-.contact-section .section-label { color: var(--color-white); }
+.contact-section .section-title { color: var(--color-primary); }
+.contact-section .section-subtitle { color: var(--color-primary); }
+.contact-section .section-label { color: var(--color-primary); }
 
 .contact-grid {
   display: grid;
@@ -852,22 +852,22 @@ ul { list-style: none; }
 .contact-info-icon {
   width: 42px;
   height: 42px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(44, 56, 48, 0.1);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
+  color: var(--color-primary);
   flex-shrink: 0;
 }
 .contact-info-text h4 {
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-primary);
   margin-bottom: 2px;
 }
-.contact-info-text p { font-size: 0.875rem; color: rgba(255,255,255,0.6); }
+.contact-info-text p { font-size: 0.875rem; color: var(--color-primary); }
 
 /* Form Card */
 .enquiry-form {
