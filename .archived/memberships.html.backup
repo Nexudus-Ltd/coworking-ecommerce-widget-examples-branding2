@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Book a meeting room at Kalkio Workspace — fully equipped, bookable by the hour. AV, catering, and high-speed Wi-Fi included." />
-  <title>Meeting Rooms — Kalkio Workspace</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Kalkio Workspace memberships — workshops, boardrooms, and full venue hire for up to 80 guests. Book online." />
+  <title>Memberships — Kalkio Workspace</title>
 
   <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
 
@@ -17,11 +18,30 @@
   <link rel="stylesheet" href="styles.css" />
 
   <!--
-    NEXUDUS BOOKING WIDGET SCRIPT
-    This script enables the embedded booking widget below.
+    NEXUDUS EVENTS WIDGET SCRIPT
     TODO: Confirm this is the correct CDN URL with your Nexudus account manager.
   -->
   <script src="https://cdn.nexudus.site/widget/nexudus-widget.min.js" defer></script>
+
+  <!-- Page-level styles for the events listing section -->
+  <style>
+    .events-widget-section {
+      padding: var(--space-xl) 0;
+      background-color: var(--color-bg-warm);
+    }
+    .events-widget-section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 600;
+      color: var(--color-secondary);
+      margin-bottom: 8px;
+    }
+    .events-widget-section .widget-intro {
+      font-size: 1rem;
+      color: var(--color-text-muted);
+      margin-bottom: 36px;
+    }
+  </style>
 </head>
 <body>
 
@@ -34,7 +54,8 @@
 
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="locations.html">Locations</a>
-        <a href="meeting-rooms.html" class="active">Meeting Rooms</a>
+        <a href="meeting-rooms.html">Meeting Rooms</a>
+        <a href="memberships.html" class="active">Memberships</a>
         <a href="book-tour.html">Book a Tour</a>
       </nav>
 
@@ -50,6 +71,7 @@
     <nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
       <a href="locations.html">Locations</a>
       <a href="meeting-rooms.html">Meeting Rooms</a>
+        <a href="memberships.html">Memberships</a>
       <a href="book-tour.html">Book a Tour</a>
       <div class="nav-mobile-actions">
         <a href="#" class="btn btn-secondary">Member Login</a>
@@ -68,47 +90,44 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Home</a>
           <span class="breadcrumb-sep" aria-hidden="true">/</span>
-          <span aria-current="page">Meeting Rooms</span>
+          <span aria-current="page">Memberships</span>
         </nav>
-        <h1 class="page-hero-title" id="page-hero-heading">Book a Meeting Room</h1>
-        <p class="page-hero-subtitle">Fully equipped, professionally designed spaces bookable by the hour — no membership required. AV, catering, and blazing-fast Wi-Fi all included.</p>
+        <h1 class="page-hero-title" id="page-hero-heading">Your workspace, your way</h1>
+        <p class="page-hero-subtitle">Choose a membership that fits your work style. From flexible hot desks to dedicated private offices — find the perfect plan and join our thriving community today.</p>
       </div>
     </section>
 
     <!-- =============================================
-         NEXUDUS BOOKING WIDGET
+         NEXUDUS EVENTS LISTING WIDGET
          ============================================= -->
     <!--
-      BOOKING WIDGET — Nexudus Integration
+      EVENTS WIDGET — Nexudus Integration
       - Replace 'your-location' in the `url` attribute with your actual Nexudus subdomain
-        e.g. url="https://kalkiocentral.nexudus.site/bookings/meeting-rooms/list"
+        e.g. url="https://kalkiocentral.nexudus.site/events/list"
       - The widget is loaded by the <script src="...nexudus-widget.min.js"> in <head>
-      - Adjust hide-header / hide-footer / hide-logo as needed
     -->
-    <section id="booking-widget" class="widget-section" aria-labelledby="widget-heading">
+    <section id="events-widget" class="events-widget-section" aria-labelledby="events-widget-heading">
       <div class="container">
         <!-- Replace 'your-location' in the url attribute with your actual Nexudus subdomain -->
         <div
-          id="nexudus-widget-iframe"
-          url="https://livasandboxnetwork.nexudus.site/livasandboxnetwork/bookings/meeting-rooms/list"
+          class="nexudus-widget-iframe"
+          url="https://livasandboxnetwork.nexudus.site/livasandboxnetwork/checkout/tariffs?type=0"
           hide-header="true"
           hide-footer="true"
           hide-logo="true"
-          aria-label="Meeting room booking widget"
+          aria-label="Kalkio events listing widget"
         ></div>
       </div>
     </section>
 
-    <!-- =============================================
-         CTA STRIP
-         ============================================= -->
-    <section class="cta-strip" aria-labelledby="rooms-cta-heading">
+    <!-- CTA Strip -->
+    <section class="cta-strip" aria-labelledby="event-cta-heading">
       <div class="container">
-        <h2 id="rooms-cta-heading">Not sure which room you need?</h2>
-        <p>Our team can help you find the perfect setup for your event. Just get in touch.</p>
+        <h2 id="event-cta-heading">Ready to find your perfect workspace?</h2>
+        <p>Choose a membership that matches your work style and join our thriving community of professionals.</p>
         <div class="cta-strip-actions">
-          <a href="book-tour.html" class="btn btn-primary">Book a Tour</a>
-          <a href="index.html#enquire" class="btn btn-outline-primary">Contact Us</a>
+          <a href="index.html#memberships" class="btn btn-primary">View Membership Plans</a>
+          <a href="book-tour.html" class="btn btn-outline-primary">Book a Tour</a>
         </div>
       </div>
     </section>
@@ -140,6 +159,9 @@
           <h4>Spaces</h4>
           <ul>
             <li><a href="locations.html">All Locations</a></li>
+            <li><a href="locations.html#central">Kalkio Central</a></li>
+            <li><a href="locations.html#riverside">Kalkio Riverside</a></li>
+            <li><a href="locations.html#east">Kalkio East</a></li>
             <li><a href="meeting-rooms.html">Meeting Rooms</a></li>
             <li><a href="memberships.html">Memberships</a></li>
           </ul>

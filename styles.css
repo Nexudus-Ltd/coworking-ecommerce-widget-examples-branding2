@@ -769,7 +769,7 @@ ul { list-style: none; }
 .testimonial-role { font-size: 0.75rem; color: var(--color-text-muted); }
 
 /* =========================================
-   EVENT SPACES TEASER (Homepage)
+   MEMBERSHIPS TEASER (Homepage)
    ========================================= */
 .event-teaser { padding: var(--space-xl) 0; background-color: var(--color-white); }
 
@@ -1026,7 +1026,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(255,81,0,0.4);
+  box-shadow: 0 4px 16px rgba(201,185,154,0.4);
   z-index: 9999;
   transition: var(--transition);
   border: none;
@@ -1034,7 +1034,7 @@ ul { list-style: none; }
 }
 #chat-launcher:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 24px rgba(255,81,0,0.5);
+  box-shadow: 0 6px 24px rgba(201,185,154,0.5);
 }
 
 #chat-widget {
@@ -1152,7 +1152,7 @@ ul { list-style: none; }
 }
 
 /* =========================================
-   AMENITIES — meeting rooms / event spaces
+   AMENITIES — meeting rooms / plans
    ========================================= */
 .amenities-section {
   padding: var(--space-xl) 0;
@@ -1231,11 +1231,11 @@ ul { list-style: none; }
 }
 
 /* =========================================
-   EVENT SPACES GRID — event-spaces.html
+   MEMBERSHIPS GRID — memberships.html
    ========================================= */
-.event-spaces-section { padding: var(--space-xl) 0; background-color: var(--color-white); }
+.plans-section { padding: var(--space-xl) 0; background-color: var(--color-white); }
 
-.event-spaces-grid {
+.plans-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
@@ -1516,7 +1516,7 @@ ul { list-style: none; }
   .memberships-grid,
   .testimonials-grid,
   .amenities-grid,
-  .event-spaces-grid { grid-template-columns: 1fr; }
+  .plans-grid { grid-template-columns: 1fr; }
 
   /* Locations scroll → vertical stack */
   .locations-row { width: 100%; flex-direction: column; }
