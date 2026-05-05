@@ -450,7 +450,7 @@ ul { list-style: none; }
   border-radius: var(--radius-lg);
   padding: 32px;
   transition: var(--transition);
-  border: 1px solid rgba(255,81,0,0.08);
+  border: 1px solid rgba(44,56,48,0.08);
 }
 .feature-card:hover {
   transform: translateY(-4px);
@@ -460,7 +460,7 @@ ul { list-style: none; }
 .feature-icon {
   width: 52px;
   height: 52px;
-  background-color: rgba(255,81,0,0.1);
+  background-color: rgba(44,56,48,0.1);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -548,7 +548,7 @@ ul { list-style: none; }
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--color-white);
-  background-color: rgba(255,81,0,0.9);
+  background-color: rgba(44,56,48,0.9);
   padding: 4px 12px;
   border-radius: var(--radius-full);
 }
@@ -739,7 +739,7 @@ ul { list-style: none; }
   background-color: var(--color-white);
   border-radius: var(--radius-lg);
   padding: 32px;
-  border: 1px solid rgba(255,81,0,0.08);
+  border: 1px solid rgba(44,56,48,0.08);
   transition: var(--transition);
 }
 .testimonial-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
@@ -935,13 +935,13 @@ ul { list-style: none; }
   display: none;
   text-align: center;
   padding: 16px;
-  background-color: rgba(255,81,0,0.07);
+  background-color: rgba(44,56,48,0.07);
   border-radius: var(--radius-md);
   color: var(--color-secondary);
   font-weight: 500;
   font-size: 1rem;
   margin-top: 16px;
-  border: 1px solid rgba(255,81,0,0.15);
+  border: 1px solid rgba(44,56,48,0.15);
 }
 .form-success.visible { display: block; }
 
@@ -1177,7 +1177,7 @@ ul { list-style: none; }
 .amenity-icon {
   width: 44px;
   height: 44px;
-  background-color: rgba(255,81,0,0.1);
+  background-color: rgba(44,56,48,0.1);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
