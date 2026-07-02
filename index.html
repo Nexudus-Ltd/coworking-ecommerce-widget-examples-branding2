@@ -546,38 +546,17 @@
   </footer>
 
   <!-- =============================================
-       CHATBOT FLOATING BUTTON
+       NEXUDUS AI CHAT
        ============================================= -->
-  <!--
-    CHATBOT EMBED PLACEHOLDER
-    Replace the contents of #chat-widget > .chat-body with the embed code
-    provided by your coworking platform or chatbot provider.
-  -->
-  <button id="chat-launcher" aria-label="Open chat" aria-expanded="false" aria-controls="chat-widget">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-    </svg>
-  </button>
-
-  <div id="chat-widget" role="dialog" aria-label="Kalkio Support Chat" aria-modal="true">
-    <div class="chat-header">
-      <div class="chat-header-info">
-        <span class="chat-header-dot" aria-hidden="true"></span>
-        <span>Kalkio Support</span>
-      </div>
-      <button id="chat-close" aria-label="Close chat">&#x2715;</button>
-    </div>
-    <div class="chat-body">
-      <!--
-        CHATBOT EMBED PLACEHOLDER
-        Replace everything inside .chat-body with your platform's chatbot embed code.
-        Example providers: Intercom, Crisp, Tidio, Drift, HubSpot Chat.
-        The layout above (header) will still render — or remove it and let the
-        provider render their own full widget.
-      -->
-      <p class="chat-placeholder-msg">Chat embed will appear here.<br />Replace this placeholder with your platform's chatbot embed code.</p>
-    </div>
-  </div>
+  <script
+    src="https://cdn.nexudus.site/widget/nexudus-ai-chat.min.js"
+    data-api-base="https://livasandboxnetwork.spaces.nexudus.com"
+    data-position="right"
+    data-primary-color="#2C3830"
+    data-text-color="#ffffff"
+    data-greeting="Hi! How can I help you today?"
+    data-placeholder="Ask me anything..."
+  ></script>
 
   <!-- Shared JavaScript -->
   <script src="main.js"></script>
